@@ -1,4 +1,4 @@
-#include "NOTE.h"
+п»ї#include "NOTE.h"
 
 NOTE::NOTE(const string& name, const string& surname, const __int64& phone, int day, int month, int year) {
 	this->_Name = name;
@@ -18,7 +18,7 @@ NOTE::NOTE(const NOTE& note) {
 }
 NOTE::~NOTE() {}
 
-//get'теры и set'теры
+//get'С‚РµСЂС‹ Рё set'С‚РµСЂС‹
 string& NOTE::Name() {
 	return _Name;
 }
@@ -38,14 +38,14 @@ int& NOTE::Year() {
 	return birth[2];
 }
 
-//операторы
+//РѕРїРµСЂР°С‚РѕСЂС‹
 ostream& operator<<(ostream& out, const NOTE& note) {
 	out << note._Name << ' ' << note._SName << ' ' << note._Phone << ' ' << note.birth[0] << '.' << note.birth[1] << '.' << note.birth[2] << '\n';
 	return out;
 }
 istream& operator >> (istream& in, NOTE& note) {
 	if (!(in >> note._Name >> note._SName >> note._Phone >> note.birth[0] >> note.birth[1] >> note.birth[2])) {
-		throw Exception("Ошибка ввода");
+		throw Exception("РћС€РёР±РєР° РІРІРѕРґР°");
 	}
 	return in;
 }
@@ -59,3 +59,4 @@ NOTE& NOTE::operator =(const NOTE& note) {
 	this->birth[2] = note.birth[2];
 	return *this;
 }
+ 

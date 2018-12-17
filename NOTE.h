@@ -1,10 +1,10 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include "Exception.h"
 
 #pragma once
 using namespace std;
-
+ 
 class NOTE {
 private:
 	string _Name;
@@ -16,7 +16,7 @@ public:
 	NOTE(const NOTE& note);
 	~NOTE();
 
-	//геттеры и сеттеры
+	//РіРµС‚С‚РµСЂС‹ Рё СЃРµС‚С‚РµСЂС‹
 	string& Name();
 	string& Surname();
 	__int64& Phone();
@@ -24,8 +24,8 @@ public:
 	int& Day();
 	int& Year();
 	
-	//операторы
-	friend ostream& operator<<(ostream& out, const NOTE& note);	//вывод
-	friend istream& operator>> (istream& in, NOTE& note);		//ввод
-	NOTE& operator =(const NOTE& note);							//присваивание
+	//РѕРїРµСЂР°С‚РѕСЂС‹
+	friend ostream& operator<<(ostream& out, const NOTE& note);	//РІС‹РІРѕРґ
+	friend istream& operator>> (istream& in, NOTE& note);		//РІРІРѕРґ
+	NOTE& operator =(const NOTE& note);							//РїСЂРёСЃРІР°РёРІР°РЅРёРµ
 };
