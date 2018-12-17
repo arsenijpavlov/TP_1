@@ -1,7 +1,4 @@
-x64/
-Debug/
-TP_1.VC.db
-TP_1/Debug/
-TP_1/x64/
-TP_1/TP_1.vcxproj
-TP_1/TP_1.vcxproj.filters
+/x64
+/Debug
+TP_1.vcxproj
+TP_1.vcxproj.filters
