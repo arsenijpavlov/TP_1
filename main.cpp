@@ -16,7 +16,7 @@
 #include "Note.h"
 using namespace std;
 
-const int size_arr = 3;//размер массива
+const int size_arr = 8;//размер массива
 NOTE notes[size_arr];//массив записей
 
 
@@ -69,7 +69,7 @@ int main() {
 			//поиск и фамилии
 			cout << "Введите фамилию:\n> ";
 			cin >> SName;
-			for (int i = 0; i < 8; i++) {
+			for (int i = 0; i < size_arr; i++) {
 				if (notes[i].Surname() == SName) {
 					cout << notes[i];
 					flag = true;
